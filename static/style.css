@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    width: 500px;  /* Breite des Fensters */
+    margin: auto;  /* Zentrieren */
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.crosshair-preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.crosshair {
+    position: absolute;
+    background: white;
+}
+
+.crosshair.vertical {
+    width: 4px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.crosshair.horizontal {
+    width: 50px;
+    height: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #282828;
+}
+
+#profile-management {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#profile-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#profile-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#profile-list li:hover {
+    background-color: #f0f0f0;
+}
+
+#profile-list button {
+    margin-left: 10px;
+}
